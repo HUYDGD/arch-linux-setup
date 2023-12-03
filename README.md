@@ -6,5 +6,5 @@ HUYDGD's Arch Linux Setup
 
 # Backup
 ```
-rsync -aAXHvP --delete --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","/home/haruto/.local/share/Trash/*/","/home/haruto/Personal/Resources/Games/*/"} / /mnt/Storage2/Personal/Backups/ArchLinux/
+sudo rsync -aAXHvP --delete --exclude=/dev/* --exclude=/proc/* --exclude=/sys/* --exclude=/tmp/* --exclude=/run/* --exclude=/mnt/* --exclude=/media/* --exclude=/lost+found --exclude=/home/haruto/.local/share/Trash/*/ --exclude=home/haruto/Personal/Resources/Games/*/ / /mnt/Storage2/Personal/Backups/ArchLinux/
 ```
